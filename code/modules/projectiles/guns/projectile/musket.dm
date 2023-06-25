@@ -11,7 +11,7 @@
 	load_method = SINGLE_CASING
 
 	max_shells = 1
-	caliber = "musket"
+	caliber = CALIBER_MISC_MUSKET
 
 	slot_flags = SLOT_BACK
 	w_class = ITEMSIZE_LARGE
@@ -138,6 +138,6 @@
 	icon_state = "blunderbuss"
 	item_state = "blunderbuss"
 	wielded_item_state = "blunderbuss-wielded"
-	caliber = "blunderbuss"
+	caliber = CALIBER_MISC_BLUNDERBUSS
 
 	ammo_type = /obj/item/ammo_casing/musket/blunderbuss

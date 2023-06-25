@@ -25,13 +25,13 @@
 
 /obj/item/ammo_casing/a357
 	desc = "A .357 bullet casing."
-	caliber = ".357"
+	caliber = CALIBER_REVOLVER
 	projectile_type = /obj/projectile/bullet/pistol/strong
 	matter = list(MAT_STEEL = 210)
 
 /obj/item/ammo_casing/a357/silver
 	desc = "A .357 silver bullet casing. Bless and Sancitfied to banish otherworlds entities."
-	caliber = ".357"
+	caliber = CALIBER_REVOLVER
 	icon_state = "ag-casing"
 	projectile_type = /obj/projectile/bullet/pistol/strong
 	matter = list(MAT_STEEL = 350, MAT_SILVER = 200)
@@ -42,7 +42,7 @@
 
 /obj/item/ammo_casing/a38
 	desc = "A .38 bullet casing."
-	caliber = ".38"
+	caliber = CALIBER_REVOLVER_LARGE
 	projectile_type = /obj/projectile/bullet/pistol
 	matter = list(MAT_STEEL = 60)
 
@@ -71,7 +71,7 @@
 
 /obj/item/ammo_casing/a44
 	desc = "A .44 bullet casing."
-	caliber = ".44"
+	caliber = CALIBER_PISTOL_MAGNUM
 	projectile_type = /obj/projectile/bullet/pistol/strong
 	matter = list(MAT_STEEL = 210)
 
@@ -103,7 +103,7 @@
 
 /obj/item/ammo_casing/a9mm
 	desc = "A 9mm bullet casing."
-	caliber = "9mm"
+	caliber = CALIBER_PISTOL_SMALL
 	projectile_type = /obj/projectile/bullet/pistol
 	matter = list(MAT_STEEL = 60)
 
@@ -147,7 +147,7 @@
  */
 /obj/item/ammo_casing/a57x28mm
 	desc = "A 5.7x28mm bullet casing."
-	caliber = "5.7x28mm"
+	caliber = CALIBER_PISTOL_MEDIUM
 	projectile_type = /obj/projectile/bullet/pistol/lap
 	matter = list(MAT_STEEL = 30, MAT_COPPER = 30)
 
@@ -172,7 +172,7 @@
 
 /obj/item/ammo_casing/a45
 	desc = "A .45 bullet casing."
-	caliber = ".45"
+	caliber = CALIBER_PISTOL_LARGE
 	projectile_type = /obj/projectile/bullet/pistol/medium
 	matter = list(MAT_STEEL = 75)
 
@@ -248,7 +248,7 @@
 	name = "shotgun slug"
 	desc = "A 12 gauge slug."
 	icon_state = "slshell"
-	caliber = "12g"
+	caliber = CALIBER_SHOTGUN
 	projectile_type = /obj/projectile/bullet/shotgun
 	matter = list(MAT_STEEL = 360)
 	fall_sounds = list('sound/weapons/guns/shotgun_fall.ogg')
@@ -309,7 +309,7 @@
 	name = " Silver shotgun shell"
 	desc = "A 12 gauge slug. Bless and Sancitfied to banish otherworlds entities."
 	icon_state = "agshell"
-	caliber = "12g"
+	caliber = CALIBER_SHOTGUN
 	projectile_type = /obj/projectile/bullet/pellet/shotgun/silver
 	matter = list(MAT_STEEL = 360, MAT_SILVER = 240)
 
@@ -318,7 +318,7 @@
 	name = "Wooden stake shell"
 	desc = "A specialized shell designed to launch a wooden stake. Bless and Sancitfied to banish otherworlds entities."
 	icon_state = "agshell"
-	caliber = "12g"
+	caliber = CALIBER_SHOTGUN
 	projectile_type = /obj/projectile/bullet/shotgun/stake
 	matter = list(MAT_STEEL = 500)
 
@@ -327,7 +327,7 @@
 	name = "unloaded technological shell"
 	desc = "A high-tech shotgun shell which can be loaded with materials to produce unique effects."
 	icon_state = "cshell"
-	caliber = "12g"
+	caliber = CALIBER_SHOTGUN
 	projectile_type = null
 	matter = list(MAT_STEEL = 500, MAT_PHORON = 200)
 
@@ -381,7 +381,7 @@
 
 /obj/item/ammo_casing/a762
 	desc = "A 7.62mm bullet casing."
-	caliber = "7.62mm"
+	caliber = CALIBER_RIFLE_MEDIUM
 	icon_state = "rifle-casing"
 	projectile_type = /obj/projectile/bullet/rifle/a762
 	matter = list(MAT_STEEL = 200)
@@ -431,7 +431,7 @@
 /obj/item/ammo_casing/a145
 	desc = "A 14.5mm shell."
 	icon_state = "lcasing"
-	caliber = "14.5mm"
+	caliber = CALIBER_RIFLE_ANTIMATERIAL
 	projectile_type = /obj/projectile/bullet/rifle/a145
 	matter = list(MAT_STEEL = 1250)
 
@@ -441,7 +441,7 @@
 
 /obj/item/ammo_casing/a545
 	desc = "A 5.45mm bullet casing."
-	caliber = "5.45mm"
+	caliber = CALIBER_RIFLE_SMALL
 	icon_state = "rifle-casing"
 	projectile_type = /obj/projectile/bullet/rifle/a545
 	matter = list(MAT_STEEL = 180)
@@ -476,7 +476,7 @@
 
 /obj/item/ammo_casing/a10x24mmcaseless
 	desc = "A 10x24mm caseless round, common during the Xenomorph wars due to its use the the battle rifles of the United Solar Marine Corps."
-	caliber = "10mmCL"
+	caliber = CALIBER_RIFLE_CASELESS
 	icon_state = "casing"
 	projectile_type = /obj/projectile/bullet/pistol/medium
 	matter = list(MAT_STEEL = 180)
@@ -484,14 +484,14 @@
 
 /obj/item/ammo_casing/a10x24mmcaseless/ap
 	desc = "A 10x24mm caseless round, common during the Xenomorph wars due to its use the the battle rifles of the United Solar Marine Corps. This one was meant to shred armored targets."
-	caliber = "10mmCL"
+	caliber = CALIBER_RIFLE_CASELESS
 	icon_state = "casing"
 	projectile_type = /obj/projectile/bullet/pistol/medium/ap
 	matter = list(MAT_STEEL = 180)
 
 /obj/item/ammo_casing/a10x24mmcaseless/hp
 	desc = "A 10x24mm caseless round, common during the Xenomorph wars due to its use the the battle rifles of the United Solar Marine Corps. This one was meant to shred armored targets."
-	caliber = "10mmCL"
+	caliber = CALIBER_RIFLE_CASELESS
 	icon_state = "casing"
 	projectile_type = /obj/projectile/bullet/pistol/medium/hp
 	matter = list(MAT_STEEL = 180)
@@ -502,7 +502,7 @@
 
 /obj/item/ammo_casing/a5mmcaseless
 	desc = "A 5mm solid phoron caseless round."
-	caliber = "5mm caseless"
+	caliber = CALIBER_MISC_PHORON
 	icon_state = "casing" // Placeholder. Should probably be purple.
 	projectile_type = /obj/projectile/bullet/pistol // Close enough to be comparable.
 	matter = list(MAT_STEEL = 180)
@@ -521,7 +521,7 @@
 	desc = "A high explosive designed to be fired from a launcher."
 	icon_state = "rocketshell"
 	projectile_type = /obj/projectile/bullet/srmrocket
-	caliber = "rocket"
+	caliber = CALIBER_MISC_ROCKET
 	matter = list(MAT_STEEL = 10000)
 
 /obj/item/ammo_casing/rocket/weak
@@ -532,7 +532,7 @@
 /obj/item/ammo_casing/cap
 	name = "cap"
 	desc = "A cap for children toys."
-	caliber = "caps"
+	caliber = CALIBER_MISC_CAPS
 	icon_state = "r-casing"
 	color = "#FF0000"
 	projectile_type = /obj/projectile/bullet/pistol/cap
@@ -545,7 +545,7 @@
 /obj/item/ammo_casing/organic
 	name = "biomatter globule"
 	desc = "Globular biomatter rendered and ready for compression."
-	caliber = "organic"
+	caliber = CALIBER_MISC_ORGANIC
 	icon_state = "globule"
 	color = "#FFE0E2"
 	projectile_type = /obj/projectile/bullet/organic
@@ -564,7 +564,7 @@
 	name = "musket ball"
 	desc = "A solid ball made of lead."
 	icon_state = "musketball"
-	caliber = "musket"
+	caliber = CALIBER_MISC_MUSKET
 	projectile_type = /obj/projectile/bullet/musket
 	matter = list("lead" = 100)
 	casing_flags = CASING_DELETE
@@ -580,7 +580,7 @@
 	name = "shot"
 	desc = "A bundle of lead balls and other assorted shrapnel."
 	icon_state = "blunderbuss"
-	caliber = "blunderbuss"
+	caliber = CALIBER_MISC_BLUNDERBUSS
 	projectile_type = /obj/projectile/bullet/pellet/blunderbuss
 	matter = list("lead" = 500)
 
@@ -596,7 +596,7 @@
 	name = "heavy shotgun slug"
 	desc = "A brass jacketed 10 gauge slug shell."
 	icon_state = "brshell"
-	caliber = "10g"
+	caliber = CALIBER_SHOTGUN_HEAVY
 	projectile_type = /obj/projectile/bullet/heavy_shotgun
 	matter = list(MAT_STEEL = 300, "brass" = 200)
 	fall_sounds = list('sound/weapons/guns/shotgun_fall.ogg')
@@ -627,7 +627,7 @@
 	name = "arrow of questionable material"
 	desc = "You shouldn't be seeing this arrow."
 	projectile_type = /obj/projectile/bullet/reusable/arrow
-	caliber = "arrow"
+	caliber = CALIBER_MISC_ARROW
 	icon_state = "arrow"
 	throw_force = 3 //good luck hitting someone with the pointy end of the arrow
 	throw_speed = 3
@@ -673,7 +673,7 @@
 	name = "foam dart"
 	desc = "A soft projectile made out of orange foam with a blue plastic tip."
 	projectile_type = /obj/projectile/bullet/reusable/foam
-	caliber = "foamdart"
+	caliber = CALIBER_MISC_DART
 	icon_state = "foamdart"
 	throw_force = 0 //good luck hitting someone with the pointy end of the arrow
 	throw_speed = 3

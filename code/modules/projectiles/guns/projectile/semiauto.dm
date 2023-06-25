@@ -5,7 +5,7 @@
 	item_state = "boltaction"
 	w_class = ITEMSIZE_LARGE
 	heavy = TRUE
-	caliber = "7.62mm"
+	caliber = CALIBER_RIFLE_MEDIUM
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	slot_flags = SLOT_BACK
 	//fire_sound = 'sound/weapons/rifleshot.ogg'

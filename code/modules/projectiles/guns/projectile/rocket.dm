@@ -3,7 +3,7 @@
 	desc = "MAGGOT."
 	icon_state = "rocket"
 	item_state = "rocket"
-	caliber = "rocket"
+	caliber = CALIBER_MISC_ROCKET
 	max_shells = 1
 	load_method = SINGLE_CASING
 	w_class = ITEMSIZE_LARGE

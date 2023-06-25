@@ -6,7 +6,7 @@
 	w_class = ITEMSIZE_LARGE
 	damage_force = 5
 	load_method = SINGLE_CASING
-	caliber = "arrow"
+	caliber = CALIBER_MISC_ARROW
 	max_shells = 1
 	fire_sound = 'sound/weapons/bowfire.wav'
 	slot_flags = SLOT_BACK

@@ -20,7 +20,7 @@
 	icon_state = "advanced_smg-empty"
 	w_class = ITEMSIZE_NORMAL
 	load_method = MAGAZINE
-	caliber = "9mm"
+	caliber = CALIBER_PISTOL_SMALL
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
 	slot_flags = SLOT_BELT
 	magazine_type = null // R&D builds this. Starts unloaded.
@@ -73,7 +73,7 @@
 	item_state = null
 	w_class = ITEMSIZE_LARGE
 	damage_force = 10
-	caliber = "5.45mm"
+	caliber = CALIBER_RIFLE_SMALL
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 4)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
@@ -109,7 +109,7 @@
 	icon_state = "wt550"
 	item_state = "wt550"
 	w_class = ITEMSIZE_NORMAL
-	caliber = "9mm"
+	caliber = CALIBER_PISTOL_SMALL
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
 	slot_flags = SLOT_BELT
 	ammo_type = "/obj/item/ammo_casing/a9mmr"
@@ -136,7 +136,7 @@
 	wielded_item_state = "z8carbine-wielded"
 	w_class = ITEMSIZE_LARGE
 	damage_force = 10
-	caliber = "7.62mm"
+	caliber = CALIBER_RIFLE_MEDIUM
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 3)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
@@ -211,7 +211,7 @@
 	damage_force = 10
 	slot_flags = 0
 	max_shells = 50
-	caliber = "5.45mm"
+	caliber = CALIBER_RIFLE_SMALL
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
@@ -311,7 +311,7 @@
 	icon_state = "M60closed75"
 	item_state = "M60closed"
 	max_shells = 75
-	caliber = "7.62mm"
+	caliber = CALIBER_RIFLE_MEDIUM
 	magazine_type = /obj/item/ammo_magazine/m762_m60
 	allowed_magazines = list(/obj/item/ammo_magazine/m762_m60)
 	projectile_type = /obj/projectile/bullet/rifle/a762
@@ -335,7 +335,7 @@
 	item_state = null
 	w_class = ITEMSIZE_LARGE
 	damage_force = 10
-	caliber = "12g"
+	caliber = CALIBER_SHOTGUN
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 4)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
@@ -367,7 +367,7 @@
 	icon_state = "mini-uzi"
 	w_class = ITEMSIZE_NORMAL
 	load_method = MAGAZINE
-	caliber = ".45"
+	caliber = CALIBER_PISTOL_LARGE
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2, TECH_ILLEGAL = 5)
 	magazine_type = /obj/item/ammo_magazine/m45uzi
 	allowed_magazines = list(/obj/item/ammo_magazine/m45uzi)
@@ -418,7 +418,7 @@
 	icon_state = "p90smg"
 	item_state = "p90"
 	w_class = ITEMSIZE_NORMAL
-	caliber = "5.7x28mm"
+	caliber = CALIBER_PISTOL_MEDIUM
 	fire_sound = 'sound/weapons/gunshot/gunshot_uzi.wav'
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
 	slot_flags = SLOT_BELT // ToDo: Belt sprite.
@@ -452,7 +452,7 @@
 	desc = "This weapon was made famous by gangsters in the 20th century. Cybersun Industries is currently reproducing these for a target market of historic gun collectors and classy criminals. Uses .45 rounds."
 	icon_state = "tommygun"
 	w_class = ITEMSIZE_NORMAL
-	caliber = ".45"
+	caliber = CALIBER_PISTOL_LARGE
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2, TECH_ILLEGAL = 5)
 	slot_flags = SLOT_BELT // ToDo: Belt sprite.
 	load_method = MAGAZINE
@@ -476,7 +476,7 @@
 	item_state = "bullpup"
 	w_class = ITEMSIZE_LARGE
 	damage_force = 10
-	caliber = "7.62mm"
+	caliber = CALIBER_RIFLE_MEDIUM
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 4)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
@@ -511,7 +511,7 @@
 	item_state = "fal"
 	w_class = ITEMSIZE_LARGE
 	damage_force = 10
-	caliber = "7.62mm"
+	caliber = CALIBER_RIFLE_MEDIUM
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 4)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
@@ -540,7 +540,7 @@
 	fire_anim = "automat_fire"
 	w_class = ITEMSIZE_LARGE
 	damage_force = 10
-	caliber = "7.62mm"
+	caliber = CALIBER_RIFLE_MEDIUM
 	heavy = TRUE
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3) //A real work around to a automatic rifle.
 	slot_flags = SLOT_BACK
@@ -574,7 +574,7 @@
 	w_class = ITEMSIZE_LARGE
 	heavy = TRUE
 	damage_force = 10
-	caliber = "12g"
+	caliber = CALIBER_SHOTGUN
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 4)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
@@ -606,7 +606,7 @@
 	w_class = ITEMSIZE_LARGE
 	heavy = TRUE
 	damage_force = 10
-	caliber = "organic"
+	caliber = CALIBER_MISC_ORGANIC
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 4)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
@@ -636,7 +636,7 @@
 	icon_state = "wt274"
 	item_state = "gun"
 	load_method = MAGAZINE
-	caliber = ".45"
+	caliber = CALIBER_PISTOL_LARGE
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2, TECH_ILLEGAL = 5)
 	magazine_type = /obj/item/ammo_magazine/m45uzi/wt274
 	allowed_magazines = list(/obj/item/ammo_magazine/m45uzi/wt274)
@@ -661,7 +661,7 @@
 	icon_state = "combatsmg"
 	item_state = "combatsmg"
 	w_class = ITEMSIZE_NORMAL
-	caliber = "5.7x28mm"
+	caliber = CALIBER_PISTOL_MEDIUM
 	fire_sound = 'sound/weapons/gunshot/gunshot_uzi.wav'
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 2)
 	slot_flags = SLOT_BELT
@@ -685,7 +685,7 @@
 	desc = "The existence of this DONKsoft toy has instigated allegations of corporate espionage from NanoTrasen."
 	icon = 'icons/obj/toy.dmi'
 	icon_state = "toy_smg"
-	caliber = "foamdart"
+	caliber = CALIBER_MISC_DART
 	magazine_type = /obj/item/ammo_magazine/mfoam/smg
 	allowed_magazines = list(/obj/item/ammo_magazine/mfoam/smg)
 	fire_sound = 'sound/items/syringeproj.ogg'
@@ -712,7 +712,7 @@
 	icon = 'icons/obj/toy.dmi'
 	icon_state = "toy_c20"
 	damage_force = 5
-	caliber = "foamdart"
+	caliber = CALIBER_MISC_DART
 	magazine_type = /obj/item/ammo_magazine/mfoam/c20
 	allowed_magazines = list(/obj/item/ammo_magazine/mfoam/c20)
 	projectile_type = /obj/projectile/bullet/reusable/foam
@@ -737,7 +737,7 @@
 	icon = 'icons/obj/toy.dmi'
 	icon_state = "toy_lmgclosed100"
 	damage_force = 5
-	caliber = "foamdart"
+	caliber = CALIBER_MISC_DART
 	magazine_type = /obj/item/ammo_magazine/mfoam/lmg
 	allowed_magazines = list(/obj/item/ammo_magazine/mfoam/lmg)
 	projectile_type = /obj/projectile/bullet/reusable/foam

@@ -524,14 +524,6 @@
 	color = "#665c56"
 	taste_description = "ash"
 
-/datum/reagent/gunpowder
-	name = "Gunpowder"
-	id = "gunpowder"
-	description = "A primitive explosive chemical."
-	reagent_state = REAGENT_SOLID
-	color = "#464650"
-	taste_description = "salt"
-
 //Ashlander Alchemy!
 /datum/reagent/alchemybase
 	name = "Alchemical Base"

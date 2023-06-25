@@ -4,7 +4,7 @@
 	icon_state = "caseless"
 	item_state = "caseless"
 	w_class = ITEMSIZE_LARGE
-	caliber = "5mm caseless"
+	caliber = CALIBER_MISC_PHORON
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 3)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
@@ -28,7 +28,7 @@
 	icon_state = "usmc"
 	item_state = "usmc"
 	w_class = ITEMSIZE_LARGE
-	caliber = "10mmCL"
+	caliber = CALIBER_RIFLE_CASELESS
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE

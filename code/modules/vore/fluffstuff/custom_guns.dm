@@ -73,7 +73,7 @@
 	icon_state = "pdw"
 	item_state = "c20r" // Placeholder
 	w_class = ITEMSIZE_NORMAL
-	caliber = "9mm"
+	caliber = CALIBER_PISTOL_SMALL
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
 	slot_flags = SLOT_BELT
 	load_method = MAGAZINE
@@ -341,7 +341,7 @@ END OF CITADEL CHANGES */
 	desc = "The LeMat Revolver is a 9 shot revolver with a secondary firing barrel for loading shotgun shells. Uses .38-Special and 12g rounds depending on the barrel. This one appears to have had it's secondary barrel sealed off and looks to be in pristine condition. Either it's brand new, or its owner takes very good care of it."
 	icon_state = "lemat"
 	max_shells = 9
-	caliber = ".38"
+	caliber = CALIBER_REVOLVER_LARGE
 	ammo_type = /obj/item/ammo_casing/a38
 	preserve_item = FALSE
 END OF CITADEL CHANGES */
@@ -372,7 +372,7 @@ END OF CITADEL CHANGES */
 	icon_state = "Headdeagle"
 	item_state = "revolver"
 	fire_sound = 'sound/weapons/Gunshot.ogg'
-	caliber = ".44"
+	caliber = CALIBER_PISTOL_MAGNUM
 	magazine_type = /obj/item/ammo_magazine/m44/rubber
 	allowed_magazines = list(/obj/item/ammo_magazine/m44,/obj/item/ammo_magazine/m44/rubber)
 	load_method = MAGAZINE
@@ -432,7 +432,7 @@ END OF CITADEL CHANGES */
 	desc = "Are you feeling lucky, punk? Uses .44 rounds."
 	icon_state = "inspector"
 	item_state = "revolver"
-	caliber = ".44"
+	caliber = CALIBER_PISTOL_MAGNUM
 	ammo_type = /obj/item/ammo_casing/a44/rubber
 	handle_casings = CYCLE_CASINGS
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
@@ -452,7 +452,7 @@ END OF CITADEL CHANGES */
 	item_state = "wt550"
 	w_class = ITEMSIZE_LARGE
 	slot_flags = SLOT_BELT
-	caliber = "9mm"
+	caliber = CALIBER_PISTOL_SMALL
 	magazine_type = /obj/item/ammo_magazine/m9mm
 	allowed_magazines = list(/obj/item/ammo_magazine/m9mm)
 	load_method = MAGAZINE
@@ -585,7 +585,7 @@ END OF CITADEL CHANGES */
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	matter = list(MAT_STEEL = 1800)
-	caliber = "9mm"
+	caliber = CALIBER_PISTOL_SMALL
 	ammo_type = /obj/item/ammo_casing/a9mm
 	max_ammo = 30
 	multiple_sprites = 1
@@ -617,13 +617,13 @@ END OF CITADEL CHANGES */
 	desc = "A speedloader for .357 revolvers."
 	icon = 'icons/obj/ammo_vr.dmi'
 	icon_state = "s357"
-	caliber = ".357"
+	caliber = CALIBER_REVOLVER
 	ammo_type = /obj/item/ammo_casing/a357/stun
 
 
 /obj/item/ammo_casing/a357/stun
 	desc = "A .357 stun bullet casing."
-	caliber = ".357"
+	caliber = CALIBER_REVOLVER
 	icon = 'icons/obj/ammo_vr.dmi'
 	icon_state = "stun357"
 	projectile_type = /obj/projectile/energy/electrode/stunshot/strong
@@ -633,13 +633,13 @@ END OF CITADEL CHANGES */
 	desc = "A speedloader for .357 revolvers."
 	icon = 'icons/obj/ammo_vr.dmi'
 	icon_state = "r357"
-	caliber = ".357"
+	caliber = CALIBER_REVOLVER
 	ammo_type = /obj/item/ammo_casing/a357/rubber
 
 
 /obj/item/ammo_casing/a357/rubber
 	desc = "A .357 rubber bullet casing."
-	caliber = ".357"
+	caliber = CALIBER_REVOLVER
 	icon = 'icons/obj/ammo_vr.dmi'
 	icon_state = "rubber357"
 	projectile_type = /obj/projectile/bullet/pistol/rubber/strong
@@ -649,12 +649,12 @@ END OF CITADEL CHANGES */
 	desc = "A speedloader for .357 revolvers."
 	icon = 'icons/obj/ammo_vr.dmi'
 	icon_state = "f357"
-	caliber = ".357"
+	caliber = CALIBER_REVOLVER
 	ammo_type = /obj/item/ammo_casing/a357/flash
 
 /obj/item/ammo_casing/a357/flash
 	desc = "A .357 flash bullet casing."
-	caliber = ".357"
+	caliber = CALIBER_REVOLVER
 	icon = 'icons/obj/ammo_vr.dmi'
 	icon_state = "flash357"
 	projectile_type = /obj/projectile/energy/flash/strong
@@ -692,7 +692,7 @@ END OF CITADEL CHANGES */
 	desc = "A speedloader for .44 revolvers."
 	icon = 'icons/obj/ammo_vr.dmi'
 	icon_state = "s357"
-	caliber = ".44"
+	caliber = CALIBER_PISTOL_MAGNUM
 	matter = list(MAT_STEEL = 1260)
 	ammo_type = /obj/item/ammo_casing/a44
 	max_ammo = 6

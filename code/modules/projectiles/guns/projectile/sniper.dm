@@ -10,7 +10,7 @@
 	heavy = TRUE
 	slot_flags = SLOT_BACK
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 2, TECH_ILLEGAL = 8)
-	caliber = "14.5mm"
+	caliber = CALIBER_RIFLE_ANTIMATERIAL
 	recoil = 5 //extra kickback
 	handle_casings = HOLD_CASINGS
 	load_method = SINGLE_CASING
@@ -85,7 +85,7 @@
 	damage_force = 10
 	slot_flags = SLOT_BACK // Needs a sprite.
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 2, TECH_ILLEGAL = 8)
-	caliber = "7.62mm"
+	caliber = CALIBER_RIFLE_MEDIUM
 	load_method = MAGAZINE
 	accuracy = -45 //shooting at the hip
 	scoped_accuracy = 95
